@@ -1,0 +1,133 @@
+/* general body styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    width: 80%;
+    margin: 40px auto;
+    max-width: 1200px;
+}
+
+.taskHeading {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+    color:#f31d56 ;
+}
+
+
+/* task 1 */
+.assignInfo {
+    font-size: 20px;
+    color:#0049B7 ;
+    background-color: #a4e8f2;
+    border: 5px dotted black;
+    padding-left: 20px;
+}
+
+/* task 2 */
+
+/* 
+Note: 
+I consolidated some CSS code from tasks 2 and 3 
+to enhance the consistency of the web page 
+and streamline the code for better readability. 
+*/
+
+/* style the entire table */
+.tableKeyDates, .tableWebAttacks {
+width: 100%;
+    border-collapse: collapse; /* borders of adjacent cells collapse into a single border */
+    font-family: "Montserrat", sans-serif; /* use google font */  
+    font-size: 17px;
+    color:#102455;
+}
+
+.tableKeyDates thead tr, .tableWebAttacks thead tr {
+    background-color: #001641;
+    color: #ffffff;
+    text-align: left; 
+}
+
+.tableKeyDates th, td, .tableWebAttacks th, .tableWebAttacks td {
+    padding: 15px 15px;
+    border: 1px solid #dddddd; 
+}
+
+/* every even <tr> in <tbody> */
+.tableKeyDates tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;}
+
+/* set column width */
+/* first <th>, and the first <td> in each <tr>*/
+.tableKeyDates th:first-child,
+.tableKeyDates td:first-child {
+    width: 70%; 
+}
+
+/* last <th>, and the last <td> in each <tr>*/
+.tableKeyDates th:last-child,
+.tableKeyDates td:last-child {
+    width: 30%;
+}
+
+/* style census-date table row */
+.censusDate p,a {
+    font-weight: bold;
+}
+
+.censusDate p {
+    margin-bottom: 0;
+}
+
+.censusDate ul {
+    padding-left: 20px;
+    margin-top: 0;
+}
+
+.censusDate li {
+    list-style-type: square;}
+
+/* task 3 */
+.tableWebAttacks thead tr{
+    text-align: center; /* centre the header */   
+}
+
+.attackName {
+    font-weight: bold;
+    text-align: center;
+}
+
+.attackPic {
+    width: 180px;    
+    height: auto;
+
+    /* centre the image */
+    display: block;
+    margin: auto; 
+}
+
+/* Set column width */
+.tableWebAttacks th:first-child,
+.tableWebAttacks td:first-child {
+    width: 30%; 
+}
+
+.tableWebAttacks th:last-child,
+.tableWebAttacks td:last-child {
+    width: 70%;
+}
+
+/* task 4 */
+.highlight {
+    border: 3px dotted red;
+    font-weight: bold;
+}
+
+img {
+    width: 300px;
+    height: auto;
+}
+
+.references {
+    font-size: 14px;
+    font-style: italic;
+}
